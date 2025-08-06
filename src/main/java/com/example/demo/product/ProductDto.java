@@ -93,6 +93,7 @@ public class ProductDto {
         public void setPrice(Long price) {
             this.price = price;
         }
+
     }
 }
 
