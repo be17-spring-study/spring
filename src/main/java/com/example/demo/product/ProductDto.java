@@ -6,10 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 public class ProductDto {
-    @Entity
     public static class Product {
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Integer idx;
         private String name;
         private String description;
