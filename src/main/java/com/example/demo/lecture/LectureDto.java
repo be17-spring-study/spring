@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 
 public class LectureDto {
+    @Getter
     @Builder
     public static class Lecture{
         private Integer idx;
