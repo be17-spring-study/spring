@@ -8,7 +8,7 @@ public class MovieDto {
         public Integer runtime;
 
         public static MovieDto.Movie from(MovieEntity entity){
-            MovieDto.Movie dto  = new MovieDto.Student();
+            MovieDto.Movie dto  = new MovieDto.Movie();
             dto.setIdx(entity.getIdx());
             dto.setTitle(entity.getTitle());
             dto.setDescription(entity.getDescription());
@@ -57,8 +57,8 @@ public class MovieDto {
         public MovieEntity toEntity(){
             MovieEntity entity = new MovieEntity();
             entity.setTitle(title);
-            entity.setTitle(description);
-            entity.setTitle(runtime);
+            entity.setDescription(description);
+            entity.setRuntime(runtime);
             return entity;
         }
 

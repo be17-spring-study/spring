@@ -1,13 +1,16 @@
 package com.example.demo.movie;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MovieService {
     private final MovieRepository movieRepository;
 
     public MovieService(MovieRepository movieRepository) {this.movieRepository = movieRepository;}
-    
+
     public void register(MovieDto.Register dto){
         movieRepository.save(dto.toEntity());
     }
