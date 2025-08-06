@@ -37,7 +37,7 @@ public class BoardDto {
         private String contents;
         private int idx;
 
-        public BoardDto.Board from(BoardEntity entity){
+        public static BoardDto.Board from(BoardEntity entity){
             BoardDto.Board dto = new BoardDto.Board();
             dto.setTitle(entity.getTitle());
             dto.setContents(entity.getContents());
