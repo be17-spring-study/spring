@@ -15,7 +15,7 @@ public class BoardService {
     }
 
     // 저장
-    public void register(BoardDto.Board dto) {
+    public void register(BoardDto.Create dto) {
         boardRepository.save(dto.toEntity());
     }
 
