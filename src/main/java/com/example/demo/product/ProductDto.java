@@ -13,7 +13,7 @@ public class ProductDto {
         private Integer idx;
         private String name;
         private String description;
-        private Long price;
+        private Integer price;
 
         public String getDescription() {
             return description;
@@ -39,11 +39,11 @@ public class ProductDto {
             this.name = name;
         }
 
-        public Long getPrice() {
+        public Integer getPrice() {
             return price;
         }
 
-        public void setPrice(Long price) {
+        public void setPrice(Integer price) {
             this.price = price;
         }
 
@@ -60,10 +60,10 @@ public class ProductDto {
     public static class Register {
         private String name;
         private String description;
-        private Long price;
+        private Integer price;
 
-        public Product toEntity() {
-            Product entity = new Product();
+        public ProductTT toEntity() {
+            ProductTT entity = new ProductTT();
             entity.setName(name);
             entity.setDescription(description);
             entity.setPrice(price);
@@ -86,11 +86,11 @@ public class ProductDto {
             this.name = name;
         }
 
-        public Long getPrice() {
+        public Integer getPrice() {
             return price;
         }
 
-        public void setPrice(Long price) {
+        public void setPrice(Integer price) {
             this.price = price;
         }
 
